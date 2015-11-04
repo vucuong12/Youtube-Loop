@@ -1,0 +1,22 @@
+{
+  	"manifest_version": 2,
+  	"name": "Youtube Loop",
+  	"version": "0.1",
+  	"content_scripts": [
+	  	{
+	    	"matches": [
+	      		"<all_urls>"
+	    	],
+	    	"js": ["jquery-1.11.2.js", "content.js"]
+	  	}
+	],
+
+	"background": {
+	  "scripts": ["background.js"]
+	},
+
+	"browser_action": {
+	  "default_icon": "icon1.png"
+	}
+
+}
